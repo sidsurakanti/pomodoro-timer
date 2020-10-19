@@ -1,0 +1,111 @@
+@import "vars";
+
+.settings-container {
+	height: 90vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-family: $font;
+}
+
+.header {
+	margin: 20px;
+	font-size: 55px;
+	color: #46cfee;
+	font-weight: 500;
+}
+
+.subtitle {
+	text-align: center;
+	font-size: 22.5px;
+	color: #bdbdbd;
+}
+
+.opt-btn {
+	font-family: $font;
+	font-size: 15px;
+	background-color: #e2e2e2;
+	cursor: pointer;
+	border-radius: 10px;
+	border: none;
+	outline: none;
+	width: 115px;
+	height: 32.5px;
+	margin: 1rem 0.75rem 1.75rem 0;
+}
+
+button.active-pl,
+button.active-sl,
+button.active-ls {
+	background-color: #6dcbe0;
+	font-weight: 500;
+}
+
+.modal {
+	font-family: $font;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border-radius: 20px;
+  z-index: 10;
+  background-color: $background-color;
+  width: 60%;
+	max-width: 60%;
+	height: 70%;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+  padding: 1.5rem 2.5rem;
+  display: flex;
+  justify-content: space-between;
+	align-items: center;
+}
+
+.modal-header .title {
+	color: #6dcbe0;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.modal-header .close-button {
+	color: #46cfee;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.modal-body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem 2rem;
+	max-height: fit-content;
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .5);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}

@@ -1,0 +1,32 @@
+@import "vars";
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap");
+
+
+.about-container {
+	font-family: "Poppins", sans-serif;
+	color: rgb(218, 218, 218);
+	width: 85%;
+	height: 90vh;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 22px;
+	padding: 3rem 0rem;
+	letter-spacing: .9px;
+	& #subtitle {
+		font-family: $font;
+		font-weight: 500;
+		color: #62d6fa;
+		font-size: 50px;
+	}
+	& .about-content {
+		width: 50%;
+		text-align: center;
+		& a {
+			text-decoration: none;
+			color: #abc2f3;
+		}
+	}
+}
