@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/styles/styles.css" />
+		<title>Pomodoro - About</title>
+		<script src="/js/settings.js" defer></script>
+	</head>
+	<body>
+		<main class="container">
+			<header class="nav-bar" id="main-nav-bar">
+				<h1 id="logo"><a href="/index.html">pomodoro</a></h1>
+
+				<ul class="nav-list">
+					<li class="nav-item" id="about">
+						<button id="about-btn" class="nav-btn">
+							<a href="#" id="about-link" class="nav-link">about</a>
+						</button>
+					</li>
+					<li class="nav-item" id="settings">
+					<button data-modal-target="#modal" id="settings-btn" class="nav-btn">
+						settings
+					</button>
+					</li>
+				</ul>
+      </header>
+      
+			<section class="about-container">
+				<h4 id="subtitle">About</h4>
+				<p class="about-content">
+					This website is a functional and minimalistic pomodoro timer with the goal of helping you
+					<b>focus</b> and be <b>more productive</b>! You can read more about the pomodoro method <a href="https://todoist.com/productivity-methods/pomodoro-technique" alt="todoist's article about the pomodoro method">here</a>.
+				</p>
+			</section>
+
+			<div class="modal" id="modal">
+				<div class="modal-header">
+					<div class="title">Settings</div>
+					<button data-close-button class="close-button">&times;</button>
+				</div>
+
+				<div class="modal-body">
+					<div class="pomodoro-length options">
+						<p class="subtitle">pomodoro length</p>
+						<button class="opt-btn active-pl" id="pl-25">25</button>
+						<button class="opt-btn" id="pl-15">15</button>
+						<button class="opt-btn" id="pl-10">10</button>
+					</div>
+					<div class="small-break-length options">
+						<p class="subtitle">small break length</p>
+						<button class="opt-btn active-sl" id="sl-5">5</button>
+						<button class="opt-btn" id="sl-10">10</button>
+						<button class="opt-btn" id="sl-15">15</button>
+					</div>
+					<div class="long-break-length options">
+						<p class="subtitle">long break length</p>
+						<button class="opt-btn active-ls" id="ll-15">15</button>
+						<button class="opt-btn" id="ll-20">20</button>
+						<button class="opt-btn" id="ll-30">30</button>
+					</div>
+				</div>
+			</div>
+
+			<div id="overlay"></div>
+		</main>
+	</body>
+</html>
