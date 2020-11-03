@@ -104,7 +104,7 @@ header #logo a {
 }
 header ul li {
 	list-style: none;
-	font-size: 20px;
+	font-size: 22.5px;
 	font-weight: 500;
 }
 header button {
@@ -116,10 +116,10 @@ header button {
 }
 .nav-list {
 	display: flex;
-	padding-top: 10px;
+	padding-top: 5px;
 }
 .nav-list .nav-item {
-	padding: 0 1.5rem;
+	padding: 1.5rem;
 }
 .center {
 	margin: 0 auto;
@@ -189,16 +189,17 @@ header button {
 @media screen and (max-width: 768px) {
 	header #logo {
 		font-size: 37.5px;
+		padding-right: 10px;
 	}
 	header ul li {
-		font-size: 20px;
+		font-size: 18px;
 	}
 	.nav-list .nav-item {
-		padding: 25px 7.5px;
+		padding: 5px;
 	}
 	.display {
 		font-size: 120px !important;
-		height: 140px !important;
+		height: 150px !important;
 	}
 	.btn:hover svg {
 		width: 100px !important;
@@ -219,8 +220,8 @@ header button {
 		font-size: 20px !important;
 	}
 	.opt-btn {
-		width: 100px !important;
-		height: 30px !important;
+		width: 90px !important;
+		height: 27.5px !important;
 		font-size: 12px !important;
 	}
 }
