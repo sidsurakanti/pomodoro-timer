@@ -65,7 +65,7 @@
 	width: 115px;
 	height: 32.5px;
 	margin: 1rem 0.75rem 1.75rem 0;
-	transition: 0.25s all ease;
+	transition: 150ms all ease;
 }
 button.active-pl,
 button.active-sl,
@@ -116,10 +116,10 @@ header button {
 }
 .nav-list {
 	display: flex;
+	padding-top: 10px;
 }
 .nav-list .nav-item {
-	padding: 1.5rem;
-	padding-top: 15px !important;
+	padding: 0 1.5rem;
 }
 .center {
 	margin: 0 auto;
@@ -194,7 +194,7 @@ header button {
 		font-size: 20px;
 	}
 	.nav-list .nav-item {
-		padding: 7.5px;
+		padding: 25px 7.5px;
 	}
 	.display {
 		font-size: 120px !important;
@@ -221,6 +221,6 @@ header button {
 	.opt-btn {
 		width: 100px !important;
 		height: 30px !important;
-		font-size: 12.5px !important;
+		font-size: 12px !important;
 	}
 }
