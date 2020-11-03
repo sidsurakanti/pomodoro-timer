@@ -28,6 +28,12 @@ class Timer {
 		return;
 	}
 
+	pause_audio() {
+		if (this.audio_timeout) clearTimeout(this.audio_timeout);
+		timer_end_sound.pause();
+		timer_end_sound.currentTime = 0;
+	}
+
 	// resets the timer display to the pomodoro length which is default to 25 minutes
 	reset_display() {
 		this.display.innerHTML = localStorage.getItem("plTime");
@@ -58,6 +64,8 @@ class Timer {
 
 			// starts the pomodoro if the use currently isn't on break
 			if (this.on_break == false) {
+				this.pause_audio()
+
 				if (this.paused == false) this.reset_display();
 				interval = setInterval(() => this.timer(), 1000);
 				console.log("pomodoro started");
@@ -65,6 +73,9 @@ class Timer {
 
 			// starts the break timer if the user is currently on break
 			if (this.on_break == true) {
+				this.pause_audio()
+
+				// starts break timer
 				interval = setInterval(() => this.timer("break-end"), 1000);
 				console.log("break started");
 			}
@@ -104,8 +115,8 @@ class Timer {
 				this.reset_display();
 
 				// logs that the break ended and plays the timer end sound
-				console.log("break ended");
 				this.play_sound(10);
+				console.log("break ended");
 			});
 		});
 
@@ -121,9 +132,7 @@ class Timer {
 			this.pomodoro_number = 0;
 
 			// pauses audio and resets the current time of the audio
-			clearInterval(this.audio_timeout);
-			timer_end_sound.pause();
-			timer_end_sound.currentTime = 0;
+			this.pause_audio()
 
 			console.log("timer reset");
 		});
