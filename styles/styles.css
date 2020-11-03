@@ -188,7 +188,7 @@ header button {
 }
 @media screen and (max-width: 860px) {
 	header #logo {
-		font-size: 37.5px;
+		font-size: 33.5px;
 	}
 	header ul li {
 		font-size: 18px;
@@ -226,7 +226,7 @@ header button {
 }
 @media screen and (max-width: 768px) {
 	header #logo {
-		font-size: 37.5px;
+		font-size: 33.5px;
 		padding-right: 10px;
 	}
 	header ul li {
@@ -265,7 +265,7 @@ header button {
 }
 @media screen and (max-width: 667px) {
 	header #logo {
-		font-size: 35px;
+		font-size: 33px;
 		padding-right: 10px;
 	}
 	header ul li {
