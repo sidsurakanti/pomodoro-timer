@@ -139,20 +139,20 @@ header {
 	}
 }
 
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
 	header {
 		& #logo {
-			font-size: 37.5px !important;
+			font-size: 37.5px;
 		}
 
 		& ul li {
-			font-size: 20px !important;
+			font-size: 20px;
 		}
 	}
 
 	.nav-list {
 		& .nav-item {
-			padding: 7.5px !important; 
+			padding: 7.5px; 
 		}
 	}
 	.display {
