@@ -142,12 +142,12 @@ header {
 @media screen and (max-width: 767px) {
 	header {
 		& #logo {
-			font-size: 33.5px;
+			font-size: 30px;
 			padding-right: 10px;
 		}
 
 		& ul li {
-			font-size: 18px;
+			font-size: 1.1px;
 		}
 	}
 
@@ -193,8 +193,8 @@ header {
 @media screen and (max-width: 667px) {
 	header {
 		& #logo {
-			font-size: 33px;
-			padding-right: 10px;
+			font-size: 30px;
+			padding-right: 3px;
 		}
 
 		& ul li {
