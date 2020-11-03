@@ -138,6 +138,56 @@ header {
 	}
 }
 
+@media screen and (max-width: 860px) {
+	header {
+		& #logo {
+			font-size: 37.5px;
+		}
+
+		& ul li {
+			font-size: 18px;
+		}
+	}
+
+	.nav-list {
+		& .nav-item {
+			padding: 5px;
+		}
+	}
+	.display {
+		font-size: 120px !important;
+		height: 150px !important;
+	}
+
+	& .btn:hover {
+		& svg {
+			width: 100px !important;
+
+			& path#Rectangle-1 {
+				fill: #c0effa !important;
+			}
+		}
+	}
+
+	svg {
+		width: 100px !important;
+	}
+
+	.about-container {
+		font-size: 17.5px !important;
+		& .about-content {
+			width: 90%;
+		}
+	}
+	.subtitle {
+		font-size: 20px !important;
+	}
+	.opt-btn {
+		width: 90px !important;
+		height: 27.5px !important;
+		font-size: 12px !important;
+	}
+}
 @media screen and (max-width: 768px) {
 	header {
 		& #logo {
@@ -177,7 +227,58 @@ header {
 	.about-container {
 		font-size: 17.5px !important;
 		& .about-content {
-			width: 70%;
+			width: 90%;
+		}
+	}
+	.subtitle {
+		font-size: 20px !important;
+	}
+	.opt-btn {
+		width: 90px !important;
+		height: 27.5px !important;
+		font-size: 12px !important;
+	}
+}
+@media screen and (max-width: 667px) {
+	header {
+		& #logo {
+			font-size: 35px;
+			padding-right: 10px;
+		}
+
+		& ul li {
+			font-size: 15px;
+		}
+	}
+
+	.nav-list {
+		& .nav-item {
+			padding: 5px;
+		}
+	}
+	.display {
+		font-size: 110px !important;
+		height: 140px !important;
+	}
+
+	& .btn:hover {
+		& svg {
+			width: 90px !important;
+
+			& path#Rectangle-1 {
+				fill: #c0effa !important;
+			}
+		}
+	}
+
+	svg {
+		width: 90px !important;
+	}
+
+	.about-container {
+		font-size: 17.5px !important;
+		& .about-content {
+			width: 90%;
 		}
 	}
 	.subtitle {
