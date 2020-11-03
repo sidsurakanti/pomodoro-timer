@@ -33,11 +33,12 @@
 	width: 115px;
 	height: 32.5px;
 	margin: 1rem 0.75rem 1.75rem 0;
+	transition: .25s all ease;
 }
 
 button.active-pl,
 button.active-sl,
-button.active-ls {
+button.active-lb {
 	background-color: #6dcbe0;
 	font-weight: 500;
 }

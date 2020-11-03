@@ -143,3 +143,11 @@ input::-webkit-outer-spin-button {
 		color: $secondary-color !important;
 	}
 }
+
+@media only screen and (max-width: 768px) {
+	.display {
+		font-size: 100px !important;
+		height: 140px !important;
+	}
+
+}
