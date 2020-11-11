@@ -1,2 +1,2 @@
-# pomodoro-timer
-a simple and minimalistic timer designed to help students focus and be more productive
+## Pomodoro
+![img](https://media.discordapp.net/attachments/597175122222252038/776143200506609704/embed.png)
