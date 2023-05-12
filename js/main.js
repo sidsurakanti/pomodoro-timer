@@ -1,4 +1,3 @@
-// main.js
 let timerDisplay = document.querySelector("#display");
 let pomodoroTime, timeObj;
 let smallBreakTime, smallBreakObj;

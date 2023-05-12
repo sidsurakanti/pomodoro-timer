@@ -11,7 +11,7 @@ class Timer {
 		this.audio_timeout;
 	}
 
-	// creates a new event and dispatches it
+	// creates a new event and dispatch it
 	static new_event(event_name, object) {
 		const evnt = new CustomEvent(event_name);
 		object.dispatchEvent(evnt);
