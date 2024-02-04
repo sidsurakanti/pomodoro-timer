@@ -1,4 +1,4 @@
-# Description
+## Background
 This project was originally developed for a hackathon. It was my first JavaScript project, inspired by the need to rest my eyes after working for extended periods. The timer is designed to enhance productivity for students while studying.
 
 ## Features
